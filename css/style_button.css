@@ -1,0 +1,30 @@
+#btn{
+    font-size: medium;
+    font-weight: bolder;
+    background-color: #c11f2f;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn_shop{
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 40%;
+    background-color: gold;
+    color: #c11f2f;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn_shop:focus{
+    border: none;
+    margin-top: 10px;
+    width: 40%;
+    font-size: medium;
+    background-color: gold;
+    color: #c11f2f;
+}
