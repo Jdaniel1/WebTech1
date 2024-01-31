@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="../css/style_section.css">
+    <link rel="stylesheet" href="../css/style_signin.css">   
+    <link rel="stylesheet" href="../css/style_navbar.css">
+    <link rel="stylesheet" href="../css/style_button.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');</style>
+
+    <img src="../img/Logo/muse.png" class="navbar_logo" style="border-radius: 25px; display: block; margin-left: auto; margin-right: auto; width: 50%;"> 
+
+    <div style="text-align: center;">
+      <a href="Signin.html" style="text-align: center;"><button id="btn">Belépés és Regisztráció</button></a>
+    </div>
+</head>
+
+<body style="background: linear-gradient(90deg, rgba(193,31,47,0.8044467787114846) 0%, rgba(128,20,31,0.8408613445378151) 35%, rgba(64,10,15,0.8772759103641457) 100%); background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <ul class="navbar">
+                <li><a class="linkstyle" href="Main.html"><i class="fa fa-music"></i>Főoldal</a></li>
+                <li><a class="linkstyle" href="Piano.html"></i>Zongorák</a></li>
+                <li><a class="linkstyle" href="Guitar.html"></i>Gitárok</a></li>
+                <li><a class="linkstyle" href="Contact.html"><i class="fa fa-fw fa-phone"></i>Üzenet</a></li>
+          </ul>
+        </nav>
+    </div> 
+
+    <div class="moving-text">!!KÉT HANGSZER ESETÉN A MÁSODIKAT FÉLÁRON!!</div>
+
+    <header class="site_title">
+        <div>
+            <h1 class="h1_title">
+                <span class="title_header_span">ZONGORÁK</span>  
+            </h1>
+        </div>     
+    </header>    
+
+    <section class="main_block">
+        <div>
+            <table>
+                <tr>
+                  <td style="width: 33.33%; text-align: center;"><img src="../img/Piano/roland.png" style="border-radius: 0; width: 60%; height: auto;"></td>
+                  <td style="width: 33.33%; text-align: center;"><img src="../img/Piano/yamaha.png" style="border-radius: 0; width: 60%; height: auto;"></td>
+                  <td style="width: 33.33%; text-align: center;"><img src="../img/Piano/nektar.png" style="border-radius: 0; margin-left: auto; width: 60%; height: auto;"></td>
+                </tr>
+                <tr>
+                    <td>
+                      <h3>Roland GP-3 PE Klasszikus zongora</h3>
+                      <ul>
+                          <li>Előnyei: kompakt méret és kedvező ár</li>
+                          <li>Tulajdonságok: 88 billentyűs kalapácsmechanika, elefántcsont hatású billentyűk, dinamikus sebességérzékelők</li>
+                          <p>Ár: 1.299.990 Ft</p>
+                      </ul>
+                      <button type="button" class="btn_shop" onclick="Click_piano_1()">Vásárlás</button>
+                      <p id="btn_Click_piano_1"></p>
+                    </td>
+
+                    <td>
+                      <h3>Yamaha P-121 B Elektromos zongora</h3>
+                      <ul>
+                        <li>Előnyei: hordozható kialakítású, ajándék "pianist" zenetanuló alkalmazással</li>
+                        <li>Tulajdonságok: súlyozott 73 billentyűs kalapácsmechnika, akusztikus zongora hatását keltő hangzás</li>
+                        <p>Ár: 256.990 Ft</p>
+                      </ul>
+                      <button type="button" class="btn_shop" onclick="Click_piano_2()">Vásárlás</button>
+                    <p id="btn_Click_piano_2"></p>
+                    </td>
+
+                    <td>
+                      <h3>Nektar Impact GX61 USB MIDI kontroller billentyűzet</h3>
+                      <ul>
+                        <li>Előnyök: egyszerű kialakítás, kevés kezelőszerv</li>
+                        <li>Tulajdonságok: 7 dupla funkciós transzport gomb, hajlító kerék, modulációs kerék</li>
+                        <p>Ár: 44.500 Ft</p>
+                      </ul>
+                      <button type="button" class="btn_shop" onclick="Click_piano_3()">Vásárlás</button>
+                    <p id="btn_Click_piano_3"></p>
+                    </td>
+                  </tr>
+              </table>
+        </div>
+    </section>
+
+    <script src="../script/script_btn.js"></script>
+
+</body>
+</html>
