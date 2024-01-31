@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/style_section.css">
+    <link rel="stylesheet" href="../css/style_signin.css">   
+    <link rel="stylesheet" href="../css/style_navbar.css">
+    <link rel="stylesheet" href="../css/style_button.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');</style>
+
+    <img src="../img/Logo/muse.png" class="navbar_logo" style="border-radius: 25px; display: block; margin-left: auto; margin-right: auto; width: 50%;"> 
+
+    <div style="text-align: center;">
+        <a href="Signin.html" style="text-align: center;"><button id="btn">Belépés és Regisztráció</button></a>
+    </div>
+</head>
+
+<body style="background: linear-gradient(90deg, rgba(193,31,47,0.8044467787114846) 0%, rgba(128,20,31,0.8408613445378151) 35%, rgba(64,10,15,0.8772759103641457) 100%); background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <ul class="navbar">
+                <li><a class="linkstyle" href="Main.html"><i class="fa fa-music"></i>Főoldal</a></li>
+                <li><a class="linkstyle" href="Piano.html"></i>Zongorák</a></li>
+                <li><a class="linkstyle" href="Guitar.html"></i>Gitárok</a></li>
+                <li><a class="linkstyle" href="Contact.html"><i class="fa fa-fw fa-phone"></i>Üzenet</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1 class="h1_variation1">Kérdése van? Írjon nekünk!</h1>
+            <div>
+                <label for="name">Neve:</label>
+                <input type="text" id="name" placeholder="pl. Saját Nevem">
+                <small class="error"></small>
+            </div>
+
+            <div>
+                <label for="email">E-mail címe:</label>
+                <input type="email" id="email" placeholder="pl. email@címem.com" />
+                <small class="error"></small>
+            </div>
+
+            <div>
+                <label for="phone">Telefonszáma:</label>
+                <input type="tel" id="phone" placeholder="pl. 06305550123" />
+                <small class="error"></small>
+            </div>
+
+            <div>
+                <label for="message">Üzenete:</label>
+                <textarea id="message" placeholder="Kedves Muse Hangszeráruház!..." rows="6"></textarea>
+                <small class="error"></small>
+            </div>
+            <div class="center">
+                <input type="submit" value=" Űrlap küldése">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="../script/script_contact.js"></script>
+
+</body>
+</html>
