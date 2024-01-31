@@ -1,0 +1,38 @@
+.main_block{
+  width: 2900px;
+  margin: auto;
+  padding: 5rem 2rem; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-table;
+  
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+  margin: 30%;
+}
+
+
+.main_block h3{
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+.main_block ul, li{
+  color: whitesmoke;
+}
+
+
+.section_title_h1{
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 200%;  
+}
